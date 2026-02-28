@@ -1,0 +1,37 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    # Keep strong typing strict; treat most issues as warnings while developing.
+    # You can switch these to "error" before production release if you want.
+    unused_import: warning
+    unused_local_variable: warning
+    dead_code: warning
+    avoid_print: warning
+
+linter:
+  rules:
+    # Style / Safety
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_final_locals: true
+    always_declare_return_types: true
+    avoid_dynamic_calls: true
+    avoid_redundant_argument_values: true
+
+    # Readability
+    lines_longer_than_80_chars: false
+    require_trailing_commas: true
+
+    # Null-safety
+    unnecessary_null_checks: true
+    unnecessary_nullable_for_final_variable_declarations: true
+
+    # Best practices
+    avoid_empty_else: true
+    avoid_init_to_null: true
+    prefer_single_quotes: true
+    unawaited_futures: true

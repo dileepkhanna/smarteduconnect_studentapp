@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19896181926",
+    "project_id": "ase-school-parent-b8756",
+    "storage_bucket": "ase-school-parent-b8756.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19896181926:android:2904d716b4eeaf1aa20067",
+        "android_client_info": {
+          "package_name": "com.example.ase_school_parent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTgvZbCN-VoneXPVc_XY9RT2vpfS0veoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

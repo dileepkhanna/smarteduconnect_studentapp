@@ -1,0 +1,100 @@
+name: ase_parent_app
+description: "ASE School Parent/Student App"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State + Routing
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.6.0
+
+  # Network
+  dio: ^5.7.0
+  logger: ^2.5.0
+
+  # Storage
+  shared_preferences: ^2.3.3
+  flutter_secure_storage: ^9.2.2
+
+  # Device / App info
+  device_info_plus: ^11.1.0
+  package_info_plus: ^8.1.1
+  uuid: ^4.5.1
+
+  # UI
+  cached_network_image: ^3.4.1
+  lottie: ^3.0.0
+  intl: ^0.20.0
+
+  # Biometrics
+  local_auth: ^2.3.0
+
+  # Push Notifications
+  firebase_core: ^3.0.0
+  firebase_messaging: ^15.0.0
+  flutter_local_notifications: ^18.0.1
+
+  # Security / Screenshot restriction
+  flutter_windowmanager_plus: ^1.0.1
+  flutter_screenshot_callback_plus: ^1.0.1
+
+  # .env
+  flutter_dotenv: ^6.0.0
+
+  # Rate app
+  in_app_review: ^2.0.9
+
+  # External links
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  json_serializable: ^6.8.0
+
+  # App Icon generator (run manually)
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/app_logo.png
+    - assets/images/placeholders/avatar.png
+    - assets/images/placeholders/empty_state.png
+    - assets/lottie/success.json
+    - assets/lottie/loader.json
+    - assets/lottie/fail.json
+    - assets/icons/
+    - .env
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: assets/images/app_logo.png
+  remove_alpha_ios: true
+  min_sdk_android: 21
